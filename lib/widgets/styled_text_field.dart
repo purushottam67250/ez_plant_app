@@ -24,11 +24,13 @@ class StyledTextInput extends StatelessWidget {
       child: TextFormField(
         obscureText: obscureText,
         style: Theme.of(context).textTheme.bodyText1,
+        cursorColor: Theme.of(context).primaryColor,
         decoration: InputDecoration(
           hintText: hint,
-          hintStyle: Theme.of(context).textTheme.bodyText1,
+          hintStyle: Theme.of(context).textTheme.bodyText2,
           prefixIcon: prefixIcon,
           filled: true,
+          prefixIconColor: Theme.of(context).primaryColor,
           fillColor: Theme.of(context).cardColor,
           border: context.textFieldBorderStyle(),
           disabledBorder: context.textFieldBorderStyle(),

@@ -29,7 +29,11 @@ class _HomeScreenState extends State<HomeScreen> {
       mainScreen: const MainScreen(),
       borderRadius: 24.0,
       showShadow: true,
-      angle: -12.0,
+      mainScreenScale: 0.25,
+      angle: -10.0,
+      shadowLayer2Color:
+          Theme.of(context).drawerTheme.scrimColor!.withAlpha(60),
+      shadowLayer1Color: Colors.transparent,
       drawerShadowsBackgroundColor: Theme.of(context).drawerTheme.scrimColor!,
       slideWidth: screenSize.width * 0.65,
       menuBackgroundColor: Theme.of(context).primaryColor,

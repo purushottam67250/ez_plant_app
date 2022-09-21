@@ -79,10 +79,11 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                 ),
               ),
-              const StyledTextInput(
+              StyledTextInput(
                 hint: 'Search Plants',
                 prefixIcon: Icon(
                   Icons.search_rounded,
+                  color: Theme.of(context).primaryColor,
                 ),
               ),
               Container(
